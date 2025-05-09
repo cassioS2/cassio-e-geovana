@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cassio e Geovana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: white;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      color: #333;
+    }
+    header {
+      background-color: #f4a7b9;
+      padding: 20px;
+      color: white;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    #contador {
+      margin-top: 60px;
+      font-size: 1.6em;
+    }
+    #foto, #segundaFoto, #terceiraFoto {
+      margin-top: 50px;
+    }
+    #foto img, #segundaFoto img, #terceiraFoto img {
+      max-width: 15%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    #mensagem {
+      margin: 60px auto 0 auto;
+      max-width: 800px;
+      font-size: 1.4em;
+      line-height: 1.6;
+      color: #000;
+      padding: 0 20px;
+    }
+    #textoExtra {
+      margin-top: 50px;
+      font-size: 1.3em;
+      color: #444;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 20px;
+    }
+    #corintios13 {
+      margin-top: 40px;
+      max-width: 800px;
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #555;
+      padding: 0 20px;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #corintios13 p {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Cassio e Geovana
+  </header>
+
+  <div id="contador">
+    Carregando contador...
+  </div>
+
+  <div id="foto">
+    <img src="https://i.imgur.com/PYYDjau.jpeg" alt="Cassio e Geovana">
+  </div>
+
+  <div id="mensagem">
+    Pela primeira vez na vida eu comecei a contar o tempo que tá passando,<br>
+    cada hora que passa eu tenho uma hora a menos pra ficar com você nessa terra,<br>
+    e ao mesmo tempo eu tenho mais uma hora a mais de história pra contar de nós dois.<br><br>
+    A vida tem mais graça com você do meu lado, Geo.<br>
+    <strong>Eu te amo!</strong>
+  </div>
+
+  <div id="segundaFoto">
+    <img src="https://i.imgur.com/nGDZzwh.jpeg" alt="Foto adicional do casal">
+  </div>
+
+  <div id="textoExtra">
+    Eu nunca achei que alguém se esforçaria tanto por mim, e nem achei que eu me esforçaria tanto por alguém, mas eu achava isso por que nunca havia amado alguém assim!<br><br>
+    <strong>Eu acho que o seguinte versículo me representa muito esse amor:</strong>
+  </div>
+
+  <div id="corintios13">
+    <p>¹ Ainda que eu fale as línguas dos homens e dos anjos, se não tiver amor, serei como o sino que ressoa ou como o prato que retine.</p>
+    <p>² Ainda que eu tenha o dom de profecia e saiba todos os mistérios e todo o conhecimento, e tenha uma fé capaz de mover montanhas, mas não tiver amor, nada serei.</p>
+    <p>³ Ainda que eu dê aos pobres tudo o que possuo e entregue o meu corpo para ser queimado, mas não tiver amor, nada disso me valerá.</p>
+    <p>⁴ O amor é paciente, o amor é bondoso. Não inveja, não se vangloria, não se orgulha.</p>
+    <p>⁵ Não maltrata, não procura seus interesses, não se ira facilmente, não guarda rancor.</p>
+    <p>⁶ O amor não se alegra com a injustiça, mas se alegra com a verdade.</p>
+    <p>⁷ Tudo sofre, tudo crê, tudo espera, tudo suporta.</p>
+    <p>⁸ O amor nunca perece; mas as profecias desaparecerão, as línguas cessarão, o conhecimento passará.</p>
+    <p>⁹ Pois em parte conhecemos e em parte profetizamos;</p>
+    <p>¹⁰ quando, porém, vier o que é perfeito, o que é imperfeito desaparecerá.</p>
+    <p>¹¹ Quando eu era menino, falava como menino, pensava como menino e raciocinava como menino. Quando me tornei homem, deixei para trás as coisas de menino.</p>
+    <p>¹² Agora, pois, vemos apenas um reflexo obscuro, como em espelho; mas, então, veremos face a face. Agora conheço em parte; então, conhecerei plenamente, da mesma forma como sou plenamente conhecido.</p>
+    <p>¹³ Assim, permanecem agora estes três: a fé, a esperança e o amor. O maior deles, porém, é o amor.</p>
+    <p><strong>1 Coríntios 13:1-13</strong></p>
+  </div>
+
+  <div id="terceiraFoto" style="margin: 50px 0;">
+    <img src="https://i.imgur.com/PwfR4mK.jpeg" alt="Foto após o texto bíblico" style="max-width: 15%; height: auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+  </div>
+
+  <script>
+    function atualizarContador() {
+      const inicio = new Date("2025-02-23T00:00:00");
+      const agora = new Date();
+      const diffEmMs = agora - inicio;
+
+      const segundosTotais = Math.floor(diffEmMs / 1000);
+      const dias = Math.floor(segundosTotais / (60 * 60 * 24));
+      const horas = Math.floor((segundosTotais % (60 * 60 * 24)) / (60 * 60));
+      const minutos = Math.floor((segundosTotais % (60 * 60)) / 60);
+      const segundos = segundosTotais % 60;
+
+      document.getElementById("contador").textContent =
+        `Já se passaram ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos desde 23 de fevereiro de 2025!`;
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+  </script>
+
+  <div id="declaracaoFinal" style="margin: 40px auto; max-width: 800px; font-size: 1.3em; color: #444; padding: 0 20px;">
+    Eu sou apaixonado por você e não se canso de dizer isso, cada segundo que a gente passa junto me deixa mais feliz e muito mais apaixonado,
+    eu to disposto a quase tudo por nós dois, e to disposto a literalmente tudo por você. Você é muito linda mds,
+    já até me perdi no texto importando a foto kakakakakak. <br><br>
+    <strong>Te amo muito meu amor!</strong>
+  </div>
+</body>
+</html>
+
